@@ -5,7 +5,7 @@ import javax.swing.*;
 public class Task06 extends PApplet {
     int x, y;
     int dx = 10;
-    int dy = 10;
+    int dy = 100;
     String name;
 
     public void settings() {
