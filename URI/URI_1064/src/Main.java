@@ -2,16 +2,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String [] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        int positiveNumber = 0;
-        for (int i = 0; i < 6; ++i) {
-            double number = scanner.nextDouble();
+        float number, total = 0, average = 0;
+        int totalNumber = 0;
+        Scanner sc =new Scanner(System.in);
+        for (int i = 1; i <= 6; i++) {
+            number =sc.nextFloat();
             if (number > 0) {
-                ++positiveNumber;
+                totalNumber += 1;
+                total += number;
             }
         }
+        average = total / totalNumber;
 
-        System.out.println(positiveNumber + " valores positivos");
+        System.out.print(totalNumber + " valores positivos\n");
+        System.out.printf("%.1f\n", average);
+
     }
+
 }
