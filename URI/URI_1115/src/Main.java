@@ -9,7 +9,7 @@ public class Main {
         while (((x = scanner.nextInt())!= 0) && ((y = scanner.nextInt()) != 0)) {
 
             if (x > 0 && y > 0) {
-            System.out.printf("primeiro%n");
+                System.out.printf("primeiro%n");
             } else if (x > 0 && y < 0) {
                 System.out.printf("quarto%n");
             } else if (x < 0 && y > 0) {
